@@ -1,0 +1,14 @@
+# Which city is best for a Pub Crawl?
+## Introduction/Business Problem
+You want to make a vacation and have a good Pub Crawl, but where to go? (Target audience: tourists, students…)
+OR: You want to open a hostel and offer a great Pub Crawl, but where to open it? (Target audience: Hostels, activity providers like Tripadvisor)
+
+Manhattan (New York), Toronto, Berlin or Munich
+
+To solve these problems, I want to find all Pubs in a 1km radius around city center (city center from geolocator). The number of requests to Foursquare is limited, so if the number of pubs is too high I will reduce the radius if needed. 
+Then I’ll take the best 7 pubs of town and add the rating for a total “Pub Rating” of the city. In addition, the total number of venues will also be included.
+Finally, the winning city plan will be displayed with the seven best pubs to have a map ready for a pub crawl.
+Furthermore, very interesting would be to calculate the best route (travelling salesman problem) but that would be too much for this project
+
+## Data
+Four dataframes consisting of the best seven pubs respectively in the cities of: Manhattan (New York), Toronto, Berlin or Munich.
